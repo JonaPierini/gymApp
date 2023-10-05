@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Producto 1",
+      "price": 100,
+      "description": "Descripción del producto 1",
+      "image": "https://chutamax.com/wp-content/uploads/2022/05/ronniecoleman-king-test-8x-90tabs.png"
+    },
+    {
+      "id": 2,
+      "name": "Producto 2",
+      "price": 150,
+      "description": "Descripción del producto 2",
+      "image": "https://chutamax.com/wp-content/uploads/2022/08/htp-dianabol-portada.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Producto 3",
+        "price": 200,
+        "description": "Descripción del producto 3",
+        "image": "https://chutamax.com/wp-content/uploads/2022/05/alpha-test-600x600.png"
+    },
+    {
+        "id": 4,
+        "name": "Producto 4",
+        "price": 250,
+        "description": "Descripción del producto 4",
+        "image": "https://chutamax.com/wp-content/uploads/2022/05/celltech.png"
+    }
+
+  ]
+  
