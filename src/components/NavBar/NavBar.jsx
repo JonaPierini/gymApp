@@ -1,13 +1,13 @@
 import React from "react";
 import "./NavBar.css"; // por si hace falta añadir estilos personalizados
-
+import genomapharma from "../../assets/genomapharma.jpg"
 export const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            <img src={genomapharma} alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -28,23 +28,23 @@ export const NavBar = () => {
                   aria-current="page"
                   href="#"
                 >
-                  Home
+                  Inicio
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
+                <a className="nav-link active text-light" href="#">
+                  Productos
                 </a>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown ">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle active text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Contacto
                 </a>
                 <ul className="dropdown-menu">
                   <li>
@@ -68,7 +68,7 @@ export const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
+                <a className="nav-link disabled active text-light" aria-disabled="true">
                   Disabled
                 </a>
               </li>
@@ -76,8 +76,8 @@ export const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div>
-        <h1>Imagen</h1>
+      <div className="navbar-container"> 
+      <img src={genomapharma} alt="imagen" className="navbar-image" />
       </div>
     </>
   );

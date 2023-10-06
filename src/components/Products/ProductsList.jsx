@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./productList.css"
 import productsData from "../../data/products.json"; // Importa los datos de los productos
 import { ProductItem } from "./ProductItem";
 
@@ -12,7 +13,6 @@ export const ProductsList = () => {
 
   return (
     <div className="products-page">
-      <h1>Lista de Productos</h1>
       <div className="product-list d-flex flex-wrap justify-content-around">
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />

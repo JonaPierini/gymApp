@@ -12,3 +12,17 @@
     align-items: flex-start;
   }
   
+  .navbar-container {
+    position: relative;
+    height: 300px; /* o el alto que desees */
+    overflow: hidden;
+    background-color: #DAEFFB;
+}
+
+.navbar-image {
+    width: 60%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

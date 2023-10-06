@@ -1,0 +1,38 @@
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.brand-section, .contact-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.brand-description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.brand-description li {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 50px; /* Para ajustar e ir calculando. */
+    height: auto;
+}
+.color-rojo {
+    color: #DC3439;  /* Puedes cambiar "red" por el código hexadecimal específico de rojo que desees */
+ }
+ 
+ .color-azul {
+    color: #284AB0; /* Puedes cambiar "blue" por el código hexadecimal específico de azul que desees */
+ }
+ 
+.img_footer{
+    width: 20%;
+    right: 10%;
+}
