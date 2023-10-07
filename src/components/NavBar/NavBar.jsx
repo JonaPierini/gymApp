@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css"; // por si hace falta añadir estilos personalizados
-import genomapharma from "../../assets/genomapharma.jpg"
+import genomapharma from "../../assets/genomapharma.jpg";
+
 export const NavBar = () => {
   return (
     <>
@@ -68,7 +69,10 @@ export const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled active text-light" aria-disabled="true">
+                <a
+                  className="nav-link disabled active text-light"
+                  aria-disabled="true"
+                >
                   Disabled
                 </a>
               </li>
@@ -76,9 +80,7 @@ export const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div className="navbar-container"> 
-      <img src={genomapharma} alt="imagen" className="navbar-image" />
-      </div>
+      <div className="navbar-image"></div>
     </>
   );
 };

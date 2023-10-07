@@ -12,17 +12,14 @@
     align-items: flex-start;
   }
   
-  .navbar-container {
-    position: relative;
-    height: 300px; /* o el alto que desees */
-    overflow: hidden;
-    background-color: #DAEFFB;
-}
+ 
 
-.navbar-image {
-    width: 60%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
+  .navbar-image {
+    height: 500px;
+    background: linear-gradient(to right, hsla(268, 37%, 26%, 0.356), hsla(298, 37%, 26%, 0.342)), url(../../assets/genomapharma.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background-size: contain;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
