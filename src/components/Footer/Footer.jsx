@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import genomapharma from "../../assets/genomapharma.jpg";
 
-export const Fotter = () => {
+export const Footer = () => {
   return (
     <div className="footer-container">
       <div className="brand-section">
