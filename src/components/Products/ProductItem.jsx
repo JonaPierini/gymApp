@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const ProductItem = ({ product }) => {
   const navigate = useNavigate();
 
-  const prueba = () => {
+  const handleNavigate = () => {
     navigate("/detail", {
       state: product,
     });
@@ -20,8 +20,7 @@ export const ProductItem = ({ product }) => {
         <h5 className="card-title">{product.name}</h5>
         <p className="card-text">{product.description}</p>
         <p className="card-text">${product.price}</p>
-
-        <button onClick={prueba}>Ver más</button>
+        <button onClick={handleNavigate}>Ver más</button>
       </div>
     </div>
   );
