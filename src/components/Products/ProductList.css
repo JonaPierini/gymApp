@@ -1,0 +1,25 @@
+.button-style {
+    display: inline-block;
+    padding: 10px 45%; 
+    border-radius: 25px; 
+    background-color: #DC3439; /*Color que combine! */
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+    white-space: nowrap;
+}
+
+.button-style:hover {
+    background-color: #284AB0; /* Color de fondo ligeramente más oscuro al pasar el mouse */
+}
+
+.row{
+    display:flex;
+    justify-content: space-around; /* Esto separará las tarjetas uniformemente */
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}

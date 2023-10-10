@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css"; // por si hace falta añadir estilos personalizados
 import genomapharma from "../../assets/genomapharma.jpg";
+import mainphoto from "../../assets/mainphoto.jpg"
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {

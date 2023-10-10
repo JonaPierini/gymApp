@@ -12,7 +12,6 @@ export const Footer = () => {
         </h1>
         <img src={genomapharma} alt="Logo" className="img_footer" />
         <div className="brand-description">
-          <p>Espacio para insertar desc...</p>
           <ul>
             <li>Productos</li>
             <li>Contactos</li>
@@ -23,10 +22,10 @@ export const Footer = () => {
 
       <div className="contact-section">
         <h2>CONTACTO</h2>
-        <p>Contactese por Whatsapp</p>
+        <p>Contactese por WhatsApp</p>
         <a href="https://web.whatsapp.com/send?phone=3412136742" target="blank">
           <img
-            src="https://img.freepik.com/vector-gratis/diseno-icono-whatsapp_23-2147900927.jpg?w=740&t=st=1696627294~exp=1696627894~hmac=e1efa171b0440564565e5969d09309356e9d1478a212c6a9c2c2d3ccdb5ed658"
+            src="https://www.pngfind.com/pngs/m/49-494185_logo-whatsapp-png-whatsapp-logo-png-transparent-png.png"
             alt="WhatsApp"
             className="img_wsp"
           />
