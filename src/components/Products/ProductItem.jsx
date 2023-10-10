@@ -1,6 +1,15 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const ProductItem = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/detail", {
+      state: product,
+    });
+  };
+
   return (
     <div
       className="card product-card"
@@ -11,9 +20,7 @@ export const ProductItem = ({ product }) => {
         <h5 className="card-title">{product.name}</h5>
         <p className="card-text">{product.description}</p>
         <p className="card-text">${product.price}</p>
-        <a href="#" className="btn btn-primary">
-          Ver más
-        </a>
+        <button onClick={handleNavigate}>Ver más</button>
       </div>
     </div>
   );
