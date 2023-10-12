@@ -9,7 +9,7 @@ export const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" >
             <img src={genomapharma} alt="" />
           </a>
           <button
