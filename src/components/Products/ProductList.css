@@ -1,6 +1,6 @@
 .button-style {
-    display: inline-block;
-    padding: 10px 45%; 
+    display: flex;
+    padding: 10px 20px; 
     border-radius: 25px; 
     background-color: #DC3439; /*Color que combine! */
     color: white; 
@@ -10,10 +10,19 @@
     text-align: center; 
     transition: background-color 0.3s; 
     white-space: nowrap;
+    justify-content: center;
+
 }
 
 .button-style:hover {
     background-color: #284AB0; /* Color de fondo ligeramente más oscuro al pasar el mouse */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .row{
@@ -21,5 +30,28 @@
     justify-content: space-around; /* Esto separará las tarjetas uniformemente */
     margin-top: 30px;
     margin-bottom: 10px;
+    max-width:95%;
 
+}
+.expand-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2C3E50; /* Color de fondo azul oscuro */
+    color: #FFF;               /* Color de texto blanco */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Esquinas redondeadas */
+    font-weight: bold;         /* Texto en negrita */
+    text-align: center;
+    cursor: pointer;           /* Cambiar el cursor a mano al pasar el ratón */
+    text-decoration: none;     /* Sin subrayado */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el fondo y transformación */
+}
+.expand-btn:hover {
+    background-color: #3498DB; /* Cambiar color de fondo al pasar el ratón */
+    transform: scale(1.05);    /* Aumentar un poco el tamaño al pasar el ratón */
+}
+
+/* Efecto active para el botón */
+.expand-btn:active {
+    transform: scale(0.95);    /* Disminuir un poco el tamaño al hacer clic */
 }

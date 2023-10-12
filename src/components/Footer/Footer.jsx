@@ -25,7 +25,7 @@ export const Footer = () => {
         <p>Contactese por WhatsApp</p>
         <a href="https://web.whatsapp.com/send?phone=3412136742" target="blank">
           <img
-            src="https://www.pngfind.com/pngs/m/49-494185_logo-whatsapp-png-whatsapp-logo-png-transparent-png.png"
+            src="http://logo-logos.com/2016/10/WhatsApp_logo_icon.png"
             alt="WhatsApp"
             className="img_wsp"
           />
