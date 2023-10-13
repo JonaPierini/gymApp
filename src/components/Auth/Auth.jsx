@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Auth = () => {
+  const [inputChange, setInputChange] = useState("");
+
+  const handleChange = (e) => {
+    setInputChange(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(inputChange);
+  };
+
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <h1>Auth</h1>
-      <input></input>
+      <input value={inputChange} onChange={handleChange}></input>
       <button>Autenticar</button>
-    </div>
+    </form>
   );
 };
