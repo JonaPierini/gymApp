@@ -14,9 +14,19 @@ export const Auth = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Auth</h1>
-      <input value={inputChange} onChange={handleChange}></input>
-      <button>Autenticar</button>
+      <div className="input-group mb-3">
+        <button className="input-group-text" id="inputGroup-sizing-default">
+          Auth
+        </button>
+        <input
+          type="text"
+          className="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          value={inputChange}
+          onChange={handleChange}
+        />
+      </div>
     </form>
   );
 };

@@ -1,11 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ProductsList } from "../Products/ProductsList";
+import "./ViewMoreProducts.css";
 
 export const ViewMoreProducts = () => {
   return (
-    <div>
-      <h1>Ver mas Productos</h1>
-      <Link to={"/"}>Regresar</Link>
-    </div>
+    <>
+      <ProductsList />
+      <Link style={{ textDecoration: "none" }} to={"/"}>
+        <div className="buttonViewMoreProducts">
+          <button type="button" className="btn btn-outline-secondary">
+            Regresar
+          </button>
+        </div>
+      </Link>
+    </>
   );
 };

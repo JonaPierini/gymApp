@@ -27,15 +27,6 @@
     height: 100vh;
 }
 
-.row{
-    display:flex;
-    justify-content: space-around; /* Esto separará las tarjetas uniformemente */
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    max-width:95%;
-
-}
 .expand-btn {
     display: inline-block;
     padding: 10px 20px;
