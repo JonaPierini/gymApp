@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card";
+import "./Card.css";
 import autenticidad from "../../assets/autenticidad.png";
 import calidad from "../../assets/calidad.png";
 import tecnologia from "../../assets/tecnologia.png";
