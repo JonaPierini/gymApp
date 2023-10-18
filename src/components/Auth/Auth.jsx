@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import "./Auth.css";
 
 export const Auth = () => {
   const [inputChange, setInputChange] = useState("");
@@ -37,8 +38,8 @@ export const Auth = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Enter the product code found on the lid</label>
+      <div className="mb-3">
+        <label for="exampleInputPassword1" className="form-label">Enter the product code found on the lid</label>
         <input
             type="text"
             className="form-control"
@@ -48,7 +49,7 @@ export const Auth = () => {
             onChange={handleChange}
           />
       </div>
-      <button type="submit" class="btn btn-primary">Authenticate product</button>
+      <button type="submit" className="btn btn-primary">Authenticate product</button>
     </form>
   );
 };
