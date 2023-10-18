@@ -11,8 +11,7 @@ export const Card = () => {
         <img src={calidad} className="card-img-top" alt="calidad" />
         <div className="card-body">
           <p className="card-text">
-            Es nuestra misión entregar a nuestros clientes la mejor calidad de
-            productos farmacéuticos
+            It's our mission to deliver the best quality pharmaceutical products to our customers
           </p>
         </div>
       </div>
@@ -20,8 +19,7 @@ export const Card = () => {
         <img src={tecnologia} className="card-img-top" alt="tecnologia" />
         <div className="card-body">
           <p className="card-text">
-            Nuestra producción está equipada con la tecnología más avanzada del
-            mercado farmacéutico
+          Our production is equipped with the most advanced technology in the pharmaceutical market
           </p>
         </div>
       </div>
@@ -29,8 +27,7 @@ export const Card = () => {
         <img src={autenticidad} className="card-img-top" alt="autenticidad" />
         <div className="card-body">
           <p className="card-text">
-            Garantizamos la oferta de los sistemas de autenticación tecnológica
-            más recientes en cada producto para proteger a nuestros consumidores
+          We guarantee the offer of the latest technological authentication systems in each product to protect our consumers
           </p>
         </div>
       </div>

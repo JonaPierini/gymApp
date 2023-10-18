@@ -38,7 +38,7 @@ export const Auth = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Ingrese el codigo del producto que se encuentra en la tapa</label>
+        <label for="exampleInputPassword1" class="form-label">Enter the product code found on the lid</label>
         <input
             type="text"
             className="form-control"
@@ -48,7 +48,7 @@ export const Auth = () => {
             onChange={handleChange}
           />
       </div>
-      <button type="submit" class="btn btn-primary">Autenticar producto</button>
+      <button type="submit" class="btn btn-primary">Authenticate product</button>
     </form>
   );
 };

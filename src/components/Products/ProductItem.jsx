@@ -20,7 +20,7 @@ export const ProductItem = ({ product }) => {
         <h5 className="card-title">{product.name}</h5>
         <p className="card-text">{product.description}</p>
         <p className="card-text">${product.price}</p>
-        <button className="expand-btn"onClick={handleNavigate}>Ver más</button>
+        <button className="expand-btn"onClick={handleNavigate}>View more</button>
       </div>
     </div>
   );

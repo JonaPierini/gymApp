@@ -10,7 +10,7 @@ export const ViewMoreProducts = () => {
       <Link style={{ textDecoration: "none" }} to={"/"}>
         <div className="buttonViewMoreProducts">
           <button type="button" className="btn btn-outline-secondary">
-            Regresar
+            Back
           </button>
         </div>
       </Link>

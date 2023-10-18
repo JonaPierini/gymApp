@@ -33,7 +33,7 @@ export const ProductsList = () => {
         <>
           <div style={{ marginTop: "2rem" }}>
             <Link to={"/product"} className="button-style">
-              Ver mas productos
+              Explore more products
             </Link>
           </div>
           <Card></Card>
