@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css"; // por si hace falta añadir estilos personalizados
 import genomapharma from "../../assets/genomapharma.jpg";
-import mainphoto from "../../assets/mainphoto.jpg"
+import mainphoto from "../../assets/mainphoto.jpg";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
@@ -9,9 +9,9 @@ export const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" >
+          <Link to={"/"} className="navbar-brand">
             <img src={genomapharma} alt="" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
