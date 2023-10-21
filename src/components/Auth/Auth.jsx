@@ -20,16 +20,16 @@ export const Auth = () => {
 
       if(response.data == true){
         Swal.fire({
-          title: 'Producto autentico',
-          text: 'Usted posee un producto autentico de la marca Genoma Pharma',
+          title: 'Authentic product',
+          text: 'You have an authentic product from the Genoma Pharma brand',
           icon: 'success',
           confirmButtonColor: "#93BE4F"
         })
       }else{
         Swal.fire({
           icon: 'error',
-          title: 'Error en la autenticación',
-          text: 'Puede que usted tenga un producto ilegitimo, comuniquese con nosotros.',
+          title: 'Authentication failed',
+          text: 'You may have an illegitimate product, contact us.',
           confirmButtonColor: "#DD6B55"
         })
       }
