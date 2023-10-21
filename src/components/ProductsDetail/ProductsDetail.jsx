@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./ProductsDetail.css"
+import "./ProductsDetail.css";
 
 export const ProductsDetail = () => {
   const location = useLocation();
@@ -10,7 +10,6 @@ export const ProductsDetail = () => {
     <div className="product-detail-container">
       <div className="product-header">
         <h1>{location.state.name}</h1>
-        <span className="product-description">{location.state.description}</span>
       </div>
 
       <div className="product-content">
@@ -19,12 +18,18 @@ export const ProductsDetail = () => {
         </div>
 
         <div className="product-image-price">
-          <img src={location.state.image} alt="Imagen del producto" className="product-image"/>
+          <img
+            src={location.state.image}
+            alt="Imagen del producto"
+            className="product-image"
+          />
         </div>
       </div>
 
       <Link to={"/"}>
-      <button type="button" className="btn btn-dark mb-3">Back</button>
+        <button type="button" className="btn btn-dark mb-3">
+          Back
+        </button>
       </Link>
     </div>
   );
