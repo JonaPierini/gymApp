@@ -9,11 +9,9 @@ export const NoMatch = () => {
       <h1>No Match</h1>
       <img src={notfound}></img>
       <Link style={{ textDecoration: "none" }} to={"/"}>
-        <div className="buttonViewMoreProducts">
-          <button type="button" className="btn btn-outline-secondary">
-            Back
-          </button>
-        </div>
+        <button type="button" className="btn btn-outline-secondary">
+          Back
+        </button>
       </Link>
     </div>
   );
