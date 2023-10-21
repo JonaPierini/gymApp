@@ -21,15 +21,15 @@
 }
 
 img {
-    width: 50px; /* Para ajustar e ir calculando. */
+    width: 50px;
     height: auto;
 }
 .color-rojo {
-    color: #DC3439;  /* Puedes cambiar "red" por el código hexadecimal específico de rojo que desees */
+    color: #DC3439;
  }
  
  .color-azul {
-    color: #284AB0; /* Puedes cambiar "blue" por el código hexadecimal específico de azul que desees */
+    color: #284AB0;
  }
  
 .img_footer{
