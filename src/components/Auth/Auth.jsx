@@ -37,19 +37,19 @@ export const Auth = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label for="exampleInputPassword1" className="form-label">Enter the product code found on the lid</label>
-        <input
-            type="text"
-            className="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-            value={inputChange}
-            onChange={handleChange}
-          />
-      </div>
-      <button type="submit" className="btn btn-primary">Authenticate product</button>
-    </form>
+      <form onSubmit={handleSubmit} className="container">
+        <div className="mb-3">
+          <label className="form-label">Enter the product code</label>
+          <input
+              type="text"
+              className="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              value={inputChange}
+              onChange={handleChange}
+            />
+        </div>
+        <button type="submit" className="btn btn-primary">Authenticate product</button>
+      </form>
   );
 };
