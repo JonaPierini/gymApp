@@ -6,6 +6,8 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { ViewMoreProducts } from "./components/ViewMoreProducts/ViewMoreProducts";
 import { ProductsDetail } from "./components/ProductsDetail/ProductsDetail";
 import { Auth } from "./components/Auth/Auth";
+import { Merchandaising } from "./components/Merchandaising/Merchandaising";
+import { AboutUs } from "./components/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/Auth" element={<Auth />} />
         <Route path="/product" element={<ViewMoreProducts />} />
         <Route path="/detail" element={<ProductsDetail />} />
+        <Route path="/merchandaising" element={<Merchandaising />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />

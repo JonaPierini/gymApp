@@ -32,6 +32,17 @@ img {
     color: #284AB0;
  }
  
-.img_footer{
-    width: 20%;
+ .contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+
+.contact-section img {
+   
+    width: 30px;
+    height: 30px;
 }
