@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Producto 1",
       "price": 100,
-      "description": "Descripción del producto 1",
+      "description": "Descripción del producto 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fugiat saepe laborum officia esse quis laboriosam eius aut quasi enim maxime fugit impedit, error minima veritatis ex facilis reiciendis maiores.",
       "image": "https://chutamax.com/wp-content/uploads/2022/05/ronniecoleman-king-test-8x-90tabs.png"
     },
     {
@@ -24,21 +24,21 @@
         "id": 4,
         "name": "Producto 4",
         "price": 250,
-        "description": "Descripción del producto 4",
+        "description": "Descripción del producto 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fugiat saepe laborum officia esse quis laboriosam eius aut quasi enim maxime fugit impedi",
         "image": "https://chutamax.com/wp-content/uploads/2022/05/celltech.png"
     },
     {
       "id": 5,
       "name": "Producto 5",
       "price": 100,
-      "description": "Descripción del producto 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fugiat saepe laborum officia esse quis laboriosam eius aut quasi enim maxime fugit impedit, error minima veritatis ex facilis reiciendis maiores.",
       "image": "https://chutamax.com/wp-content/uploads/2022/05/ronniecoleman-king-test-8x-90tabs.png"
     },
     {
       "id": 6,
       "name": "Producto 6",
       "price": 100,
-      "description": "Descripción del producto 1",
+      "description": "Descripción del producto 6",
       "image": "https://chutamax.com/wp-content/uploads/2022/05/ronniecoleman-king-test-8x-90tabs.png"
     }
 
