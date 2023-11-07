@@ -38,3 +38,12 @@
     align-items: center;
     padding-bottom: 30px;
 }
+
+.container-loader{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 3rem;
+     
+      
+}
