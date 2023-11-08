@@ -18,7 +18,7 @@ export const Auth = () => {
     setLoader(true);
 
     axios
-      .post("http://149.50.133.117:3000/modifyById", { id: inputChange })
+      .post("/modifyById", { id: inputChange })
       .then((response) => {
         if (response.data === true) {
           Swal.fire({
