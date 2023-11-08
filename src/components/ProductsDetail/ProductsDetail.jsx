@@ -1,10 +1,14 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./ProductsDetail.css";
 
 export const ProductsDetail = () => {
   const location = useLocation();
-  console.log(location);
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="product-detail-container">
@@ -26,11 +30,9 @@ export const ProductsDetail = () => {
         </div>
       </div>
 
-      <Link to={"/"}>
-        <button type="button" className="btn btn-dark mb-3">
-          Back
-        </button>
-      </Link>
+      <button onClick={handleBack} type="button" className="btn btn-dark mb-3">
+        Back
+      </button>
     </div>
   );
 };

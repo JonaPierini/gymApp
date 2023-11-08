@@ -32,7 +32,13 @@ export const NavBar = () => {
                 <Link to={"/product"}>Products</Link>
               </li>
               <li className="nav-item">
-                <Link to={"/auth"}>Authentication</Link>
+                <Link to={"/auth"}>Product Authentication</Link>
+              </li>
+              <li className="nav-item">
+                <Link to={"/merchandaising"}>Merchandaising</Link>
+              </li>
+              <li className="nav-item">
+                <Link to={"/aboutus"}>About us</Link>
               </li>
             </ul>
           </div>

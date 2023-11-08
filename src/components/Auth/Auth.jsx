@@ -1,9 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./Auth.css";
+import { ColorRing } from "react-loader-spinner";
 
 export const Auth = () => {
   const [inputChange, setInputChange] = useState("");
+
+  const [loader, setLoader] = useState(false);
 
   const handleChange = (e) => {
     setInputChange(e.target.value);
@@ -11,36 +14,52 @@ export const Auth = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputChange);
 
-    axios.post('http://localhost:4000/modifyById', { id: inputChange })
-    .then((response) => {
+    setLoader(true);
 
-      console.log(response.data)
-
-      if(response.data == true){
-        Swal.fire({
-          title: 'Authentic product',
-          text: 'You have an authentic product from the Genoma Pharma brand',
-          icon: 'success',
-          confirmButtonColor: "#93BE4F"
-        })
-      }else{
-        Swal.fire({
-          icon: 'error',
-          title: 'Authentication failed',
-          text: 'You may have an illegitimate product, contact us.',
-          confirmButtonColor: "#DD6B55"
-        })
-      }
-    })
+    axios
+      .post("http://localhost:4000/modifyById", { id: inputChange })
+      .then((response) => {
+        if (response.data === true) {
+          Swal.fire({
+            title: "Authentic product",
+            text: "You have an authentic product from the Genoma Pharma brand",
+            icon: "success",
+            confirmButtonColor: "#93BE4F",
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Authentication failed",
+            text: "You may have an illegitimate product, contact us.",
+            confirmButtonColor: "#DD6B55",
+          });
+        }
+      })
+      .finally(() => {
+        setLoader(false);
+      });
   };
 
   return (
-      <form onSubmit={handleSubmit} className="container">
-        <div className="mb-3">
-          <label className="form-label">Enter the product code</label>
-          <input
+    <>
+      {loader ? (
+        <div className="container-loader">
+          <ColorRing
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="blocks-loading"
+            wrapperStyle={{}}
+            wrapperClass="blocks-wrapper"
+            colors={["#e15b64", "#f47e60", "#f8b26a", "#bd7231", "#cb6120"]}
+          />
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="container">
+          <div className="mb-3">
+            <label className="form-label">Enter the product code</label>
+            <input
               type="text"
               className="form-control"
               aria-label="Sizing example input"
@@ -48,8 +67,12 @@ export const Auth = () => {
               value={inputChange}
               onChange={handleChange}
             />
-        </div>
-        <button type="submit" className="btn btn-primary">Authenticate product</button>
-      </form>
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Authenticate product
+          </button>
+        </form>
+      )}
+    </>
   );
 };
