@@ -14,7 +14,17 @@ export const ProductsList = () => {
 
   return (
     <>
+      <>
+      <div className="product-auth">
+        <h1>Product Auth</h1>
+        <h6>Click on image to redirect</h6>
+        <Link to={"/auth"}>
+          <img src={"src/assets/product-auth.png"} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
+        </Link>
+      </div>
+      </>
       <div className="products-page">
+        <h1>Products</h1>
         <div className="product-list d-flex flex-wrap justify-content-around">
           {products.slice(0, 4).map((product) => (
             <ProductItem key={product.id} product={product} />
