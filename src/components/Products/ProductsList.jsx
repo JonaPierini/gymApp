@@ -16,7 +16,7 @@ export const ProductsList = () => {
     <>
       <>
       <div className="product-auth">
-        <h1>Product Auth</h1>
+        <h1>Product Authenticate</h1>
         <h6>Click on image to redirect</h6>
         <Link to={"/auth"}>
           <img src={"src/assets/product-auth.png"} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
