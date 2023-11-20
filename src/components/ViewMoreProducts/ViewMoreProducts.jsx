@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import productsData from "../../data/products.json"; // Importa los datos de los productos
+import productsData from "../../assets/data/products.json"; // Importa los datos de los productos
 import "./ViewMoreProducts.css";
 import { ProductItem } from "../Products/ProductItem";
 

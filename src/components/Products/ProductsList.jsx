@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./productList.css";
-import productsData from "../../data/products.json"; // Importa los datos de los productos
+import productsData from "../../assets/data/products.json"; // Importa los datos de los productos
 import { ProductItem } from "./ProductItem";
 import { Link, useLocation } from "react-router-dom";
 import { Card } from "../Card/Card";
@@ -19,7 +19,7 @@ export const ProductsList = () => {
         <h1>Product Authenticate</h1>
         <h6>Click on image to redirect</h6>
         <Link to={"/auth"}>
-          <img src={"src/assets/product-auth.png"} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
+          <img src={"../../assets/product-auth.png"} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
         </Link>
       </div>
       </>
