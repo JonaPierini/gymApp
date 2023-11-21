@@ -10,6 +10,8 @@ export const ProductsDetail = () => {
     navigate(-1);
   };
 
+  const productDescription = { __html: location.state.description };
+
   return (
     <div className="product-detail-container">
       <div className="product-header">
@@ -17,9 +19,7 @@ export const ProductsDetail = () => {
       </div>
 
       <div className="product-content">
-        <div className="product-info">
-          <p>{location.state.description}</p>
-        </div>
+        <div className="product-info" dangerouslySetInnerHTML={productDescription} />
 
         <div className="product-image-price">
           <img

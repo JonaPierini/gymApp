@@ -3,7 +3,7 @@
       "id": 1,
       "type": "orals",
       "name": "Methagen 10",
-      "description": "Descripción del producto 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fugiat saepe laborum officia esse quis laboriosam eius aut quasi enim maxime fugit impedit, error minima veritatis ex facilis reiciendis maiores.",
+      "description": "<b>Descripción del producto 1 Lorem ipsum dolor</b> sit amet, consectetur adipisicing elit. Quas fugiat saepe laborum officia esse quis laboriosam eius aut quasi enim maxime fugit impedit, error minima veritatis ex facilis reiciendis maiores.",
       "image": "/assets/orals/oral1.jpeg"
     },
     {
