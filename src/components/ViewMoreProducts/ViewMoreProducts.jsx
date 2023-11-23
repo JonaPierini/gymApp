@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import productsData from "../../assets/data/products.json"; // Importa los datos de los productos
 import "./ViewMoreProducts.css";
 import { ProductItem } from "../Products/ProductItem";
+import axios from "axios";
 
 export const ViewMoreProducts = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +14,21 @@ export const ViewMoreProducts = () => {
   };
 
   useEffect(() => {
-    setProducts(productsData);
+    const fetchProducts = async () => {
+      try {
+      
+        const response = await axios.get("/getProducts", {
+          params: {
+            isGenoma: true,
+          },
+        });
+
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error al obtener productos:", error);
+      }
+    };
+    fetchProducts();
   }, []);
 
   return (

@@ -1,15 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "./productList.css";
-import productsData from "../../assets/data/products.json"; // Importa los datos de los productos
 import { ProductItem } from "./ProductItem";
 import { Link, useLocation } from "react-router-dom";
 import { Card } from "../Card/Card";
+import authImage from "../../assets/product-auth.png"
+import axios from "axios";
 
 export const ProductsList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(productsData);
+    const fetchProducts = async () => {
+      try {
+      
+        const response = await axios.get("/getProducts", {
+          params: {
+            isGenoma: true,
+          },
+        });
+
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error al obtener productos:", error);
+      }
+    };
+    fetchProducts();
   }, []);
 
   return (
@@ -19,7 +34,7 @@ export const ProductsList = () => {
         <h1>Product Authenticate</h1>
         <h6>Click on image to redirect</h6>
         <Link to={"/auth"}>
-          <img src={"../../assets/product-auth.png"} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
+          <img src={authImage} className="card-img-top" alt="calidad" style={{ height: "250px", width: "250px"}} />
         </Link>
       </div>
       </>
