@@ -1,25 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./AboutUs.css";
 import { BackButton } from "../BackButton/BackButton";
 
 export const AboutUs = () => {
+
+  const [text, setText] = useState([]);
+
+  useEffect(() => {
+    const fetchText = async () => {
+      try {
+      
+        const response = await axios.get("/getAboutUs", {
+          params: {
+            isGenoma: true,
+          },
+        });
+
+        setText(response.data);
+      } catch (error) {
+        console.error("Error al obtener productos:", error);
+      }
+    };
+    fetchText();
+  }, []);
+
+  console.log(text)
+
   return (
     <div className="aboutUs">
-      <h2>MISIÓN</h2>
+      <h2>{text.titleMission}</h2>
       <p>
-        Entregar a todos nuestros clientes y consumidores, la mejor calidad de
-        productos farmacéuticos, apostando a una mano de obra nacional con un
-        presente y futuro más exitoso.
+        {text.bodyMission}
       </p>
-      <h2>VISIÓN</h2>
+      <h2>{text.titleVision}</h2>
       <p>
-        Permitiendo de esta manera, que cada producto que sea entregado por
-        nuestra logística en cada punto de comercialización, cumpla con todos
-        los estándares exigidos por el M.S.P. Y B.S., así como también, por las
-        normas internacionales establecidas. Lograr que nuestra empresa, esté
-        posicionada entre los 10 primeros laboratorios antes de 10 años, con
-        productos competitivos y de vanguardia, con la mejor calidad establecida
-        bajo normas del MERCOSUR
+        {text.bodyVision}
       </p>
       <BackButton></BackButton>
     </div>
