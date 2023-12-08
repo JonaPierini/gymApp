@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import { BackButton } from "../BackButton/BackButton";
 
 export const AboutUs = () => {
   return (
@@ -20,6 +21,7 @@ export const AboutUs = () => {
         productos competitivos y de vanguardia, con la mejor calidad establecida
         bajo normas del MERCOSUR
       </p>
+      <BackButton></BackButton>
     </div>
   );
 };

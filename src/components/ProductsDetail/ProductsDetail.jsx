@@ -1,14 +1,10 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./ProductsDetail.css";
+import { BackButton } from "../BackButton/BackButton";
 
 export const ProductsDetail = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleBack = () => {
-    navigate(-1);
-  };
 
   const productDescription = { __html: location.state.description };
 
@@ -19,7 +15,10 @@ export const ProductsDetail = () => {
       </div>
 
       <div className="product-content">
-        <div className="product-info" dangerouslySetInnerHTML={productDescription} />
+        <div
+          className="product-info"
+          dangerouslySetInnerHTML={productDescription}
+        />
 
         <div className="product-image-price">
           <img
@@ -29,10 +28,7 @@ export const ProductsDetail = () => {
           />
         </div>
       </div>
-
-      <button onClick={handleBack} type="button" className="btn btn-dark mb-3">
-        Back
-      </button>
+      <BackButton />
     </div>
   );
 };

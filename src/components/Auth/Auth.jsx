@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Auth.css";
 import { ColorRing } from "react-loader-spinner";
+import { BackButton } from "../BackButton/BackButton";
 
 export const Auth = () => {
   const [inputChange, setInputChange] = useState("");
@@ -68,9 +69,16 @@ export const Auth = () => {
               onChange={handleChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">
-            Authenticate product
-          </button>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <button
+              type="submit"
+              className="btn btn-dark mb-3"
+              style={{ marginRight: "3px" }}
+            >
+              Authenticate product
+            </button>
+            <BackButton />
+          </div>
         </form>
       )}
     </>
