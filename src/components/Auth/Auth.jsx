@@ -60,6 +60,7 @@ export const Auth = () => {
         <form onSubmit={handleSubmit} className="container">
           <div className="mb-3">
             <label className="form-label">Enter the product code</label>
+            <p>Only for products manufactured from year 2024</p>
             <input
               type="text"
               className="form-control"

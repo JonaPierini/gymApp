@@ -4,13 +4,11 @@ import "./AboutUs.css";
 import { BackButton } from "../BackButton/BackButton";
 
 export const AboutUs = () => {
-
   const [text, setText] = useState([]);
 
   useEffect(() => {
     const fetchText = async () => {
       try {
-      
         const response = await axios.get("/getAboutUs", {
           params: {
             isGenoma: true,
@@ -25,18 +23,12 @@ export const AboutUs = () => {
     fetchText();
   }, []);
 
-  console.log(text)
-
   return (
     <div className="aboutUs">
       <h2>{text.titleMission}</h2>
-      <p>
-        {text.bodyMission}
-      </p>
+      <p>{text.bodyMission}</p>
       <h2>{text.titleVision}</h2>
-      <p>
-        {text.bodyVision}
-      </p>
+      <p>{text.bodyVision}</p>
       <BackButton></BackButton>
     </div>
   );
