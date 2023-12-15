@@ -19,7 +19,7 @@ export const Auth = () => {
     setLoader(true);
 
     axios
-      .post("/modifyById", { id: inputChange })
+      .post("/modifyById", { id: inputChange, isGenoma: true })
       .then((response) => {
         if (response.data === true) {
           Swal.fire({
