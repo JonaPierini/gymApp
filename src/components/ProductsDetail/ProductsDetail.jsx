@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./ProductsDetail.css";
-import { BackButton } from "../BackButton/BackButton";
+import { BackButtonProduct } from "../BackButton/BackButtonProduct";
 
 export const ProductsDetail = () => {
   const location = useLocation();
@@ -28,7 +28,7 @@ export const ProductsDetail = () => {
           />
         </div>
       </div>
-      <BackButton />
+      <BackButtonProduct />
     </div>
   );
 };
