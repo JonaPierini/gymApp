@@ -27,7 +27,7 @@ export const ViewMoreProducts = () => {
   return (
     <>
       <div className="products-page">
-        <h3 className="text-center">Orals Product</h3>
+        <h3 className="text-center">Orals</h3>
         <div className="product-list d-flex flex-wrap justify-content-around">
           {products
             .filter((product) => product.type === "orals")
@@ -36,7 +36,7 @@ export const ViewMoreProducts = () => {
             })}
         </div>
 
-        <h3 className="text-center">Inyectable Product</h3>
+        <h3 className="text-center">Inyectable</h3>
         <div className="product-list d-flex flex-wrap justify-content-around">
           {products
             .filter((product) => product.type === "inyectable")

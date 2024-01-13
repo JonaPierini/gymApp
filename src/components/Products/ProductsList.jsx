@@ -39,7 +39,6 @@ export const ProductsList = () => {
       </div>
       </>
       <div className="products-page">
-        <h1>Products</h1>
         <div className="product-list d-flex flex-wrap justify-content-around">
           {products.slice(0, 4).map((product) => (
             <ProductItem key={product.id} product={product} />
