@@ -20,9 +20,10 @@ export const ProductItem = ({ product }) => {
         <div style={{
           display : "flex",
           flexDirection : "column",
-          alignItems : "center"
+          alignItems : "center",
+          textAlign: "center",
           }}>
-          <h5 className="card-title">{product.name}</h5>
+          <h6 className="card-title" style={{ whiteSpace: "pre-line" }} dangerouslySetInnerHTML={{ __html: product.name }}></h6>
           <button className="expand-btn" onClick={handleNavigate}>
             View more
           </button>

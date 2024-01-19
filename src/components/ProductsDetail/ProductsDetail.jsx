@@ -14,19 +14,19 @@ export const ProductsDetail = () => {
         <h1>{location.state.name}</h1>
       </div>
 
-      <div className="product-content">
-        <div
-          className="product-info"
-          dangerouslySetInnerHTML={productDescription}
-        />
-
-        <div className="product-image-price">
+      <div className="product-image-price">
           <img
             src={location.state.image}
             alt="Imagen del producto"
             className="product-image"
           />
-        </div>
+      </div>
+
+      <div className="product-content">
+        <div
+          className="product-info"
+          dangerouslySetInnerHTML={productDescription}
+        />
       </div>
       <BackButtonProduct />
     </div>

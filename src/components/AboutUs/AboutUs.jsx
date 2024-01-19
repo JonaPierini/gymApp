@@ -26,9 +26,9 @@ export const AboutUs = () => {
   return (
     <div className="aboutUs">
       <h2>{text.titleMission}</h2>
-      <p>{text.bodyMission}</p>
+      <p dangerouslySetInnerHTML={{ __html: text.bodyMission }}></p>
       <h2>{text.titleVision}</h2>
-      <p>{text.bodyVision}</p>
+      <p dangerouslySetInnerHTML={{ __html: text.bodyVision }}></p>
       <BackButton></BackButton>
     </div>
   );

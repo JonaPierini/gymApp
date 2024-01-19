@@ -21,6 +21,7 @@
 
 .product-info {
   flex: 0.7;
+  text-align: justify;
 }
 
 .product-image-price {
