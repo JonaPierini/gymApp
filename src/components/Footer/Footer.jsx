@@ -20,7 +20,7 @@ export const Footer = () => {
       <div className="contact-section">
         <h4>Contact</h4>
         <a
-          href="https://web.whatsapp.com/send?phone=+52 1 871 434 1900"
+          href="https://wa.me/+5218714341900"
           target="blank"
         >
           <img src={whatsapp} alt="WhatsApp" className="img_wsp" />
